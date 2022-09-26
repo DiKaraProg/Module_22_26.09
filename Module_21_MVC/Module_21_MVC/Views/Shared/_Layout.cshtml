@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Module_21_MVC</title>
+    <link rel="stylesheet" href="~/css/MainStyleSheet.css"  asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/Add-Edit.css"  asp-append-version="true"/>
+</head>
+<body>
+    <header>
+       
+    <div class="container  header-bottom section-offset">
+      <nav class="header-navigation">
+      <ul class="header-list list-reset">
+          <li class="list-item">
+              <form asp-action="GetWorkers" asp-controller="Worker" method="get">
+            <button class="btn" type="submit">На главную</button>
+        </form>
+              </li>
+        @if (User.IsInRole("admin")||User.IsInRole("user"))
+                        {
+          <li class="list-item">
+               <form asp-action="AddWorker" asp-controller="Worker" method="get">
+            <button class="btn" type="submit">Добавить</button>
+        </form>
+              </li>
+                        }
+          @if(!User.Identity.IsAuthenticated)
+          {
+              <li class="list-item">
+               <form asp-action="Login" asp-controller="Account" method="get">
+            <button class="btn" type="submit">Login</button>
+        </form>
+        </li>
+         <li class="list-item">
+               <form asp-action="Register" asp-controller="Account" method="get">
+            <button class="btn" type="submit">Register</button>
+        </form>
+            </li>
+       }
+       else
+        {
+                      
+         <li class="list-item">
+        <form asp-action="Logout" asp-controller="Account" method="post" >
+        <button class="btn"  type="submit">Выйти</button>
+        </form>        
+        </li>  
+        }
+          
+        
+      </ul>
+
+      </nav>
+
+    </div>
+    </header>
+    <main>
+         @RenderBody()
+    </main>
+           
+</body>
+</html>

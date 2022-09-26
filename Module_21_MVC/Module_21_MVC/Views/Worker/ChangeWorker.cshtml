@@ -1,0 +1,39 @@
+﻿@model Module_21_MVC_Domain.ViewModels.Worker.WorkerViewModel
+
+@{
+    Layout = "_Layout";
+}
+        <div class="container">
+            <div class="form-div">
+       <form asp-action="Save" asp-route-id="@Model.Id" enctype="multipart/form-data">
+           <div class="form-div-item">
+      <p class="form-disc">LastName</p>
+      <input class="item-input" type="text" value="@Model.LastName" name="LastName">
+      </div>
+      <div class="form-div-item">
+      <p class="form-disc">Name</p>
+      <input class="item-input" type="text" value="@Model.Name" name="Name">
+      </div>
+      <div class="form-div-item">
+      <p class="form-disc">FatherName</p>
+      <input class="item-input" type="text" value="@Model.FatherName" name="FatherName">
+      </div>
+      <div class="form-div-item">
+      <p class="form-disc">PhoneNumber</p>
+      <input class="item-input" type="text" value="@Model.PhoneNumber" name="PhoneNumber">
+      </div>
+      <div class="form-div-item">
+      <p class="form-disc">Address</p>
+      <input class="item-input" type="text" value="@Model.Address" name="Address">
+      </div>
+      <div class="form-div-item">
+      <p class="form-disc">Note</p>
+      <input class="item-input" type="text" name="Note" value="@Model.Note"  cols="30" rows="10"></input>
+      </div>
+      <div class="form-div-item">
+      <button class="btn" type="submit">Отправить</button>
+      </div>
+
+    </form>
+    </div>
+    </div>

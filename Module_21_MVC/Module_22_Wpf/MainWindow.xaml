@@ -1,0 +1,51 @@
+﻿<Window x:Class="Module_22_Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module_22_Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel x:Name="stackPanel" Grid.Column="1" DataContext="{Binding Worker}">
+
+            <TextBlock Text="Модель" FontSize="20" Margin="5"/>
+            <TextBox x:Name="txtModel" Text="{Binding Worker.Name, Mode=TwoWay}"  FontSize="20" Margin="5"/>
+
+            <TextBlock Text="adsd" FontSize="20" Margin="5"/>
+            <TextBox x:Name="txtEngine" Text="{Binding Worker.LastName, Mode=TwoWay}"  FontSize="20" Margin="5"/>
+            <TextBlock Text="lastName" FontSize="20" Margin="5"/>
+            <TextBox x:Name="txtMark" Text="{Binding Worker.FatherName, Mode=TwoWay}" FontSize="20" Margin="5"/>
+            <TextBlock Text="fatherNama" FontSize="20" Margin="5"/>
+            <TextBox x:Name="txtphone" Text="{Binding Worker.PhoneNumber, Mode=TwoWay}" FontSize="20" Margin="5"/>
+            <TextBlock Text="Address" FontSize="20" Margin="5"/>
+            <TextBox x:Name="txtaddress" Text="{Binding Worker.Address, Mode=TwoWay}" FontSize="20" Margin="5"/>
+            <TextBlock Text="Note" FontSize="20" Margin="5"/>
+            <TextBox x:Name="txtnote" Text="{Binding Worker.Note, Mode=TwoWay}" FontSize="20" Margin="5"/>
+
+            <Button x:Name="btnAdd" Content="Добавить"  FontSize="20" Margin="5"/>
+            <Button x:Name="btnRef" Content="Обновить"  FontSize="20" Margin="5"/>
+        </StackPanel>
+        <ListView x:Name="listView">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="Name"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding LastName}" Header="LastName"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Fathername}" Header="Fathername"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding PhoneNumber}" Header="PhoneNumber"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Address}" Header="Address"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding None}" Header="None"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

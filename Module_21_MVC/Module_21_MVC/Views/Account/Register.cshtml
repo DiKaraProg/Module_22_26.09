@@ -1,0 +1,22 @@
+﻿@model Module_21_MVC_Domain.ViewModels.Account.RegisterViewModel
+@{
+    Layout = "_Layout";
+}
+
+<form asp-action="Register" asp-controller="Account">
+    <div asp-validation-summary="All">
+
+        <p>Login</p>
+        <input asp-for= "Name" placeholder="Имя" type="text" />
+
+        <p>Password</p>
+        <input asp-for= "Password" placeholder="Пароль" type="password"/>
+
+        <p>Password</p>
+        <input asp-for= "PasswordConfirm" placeholder="Подтвердите пароль" type="password"/>
+        <input asp-for= "Role" placeholder="role" type="text"/>
+
+        <button type="submit">Подтвердить</button>
+    </div>
+
+</form>

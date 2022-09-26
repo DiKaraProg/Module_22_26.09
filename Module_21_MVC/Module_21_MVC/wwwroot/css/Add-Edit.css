@@ -1,0 +1,26 @@
+﻿.form-div-item {
+    border: 1px solid black;
+    border-radius:10px;
+    margin:10px auto;
+    max-width:300px;
+    background-color:whitesmoke;
+}
+
+.form-disc {
+    font-size:15px;
+    margin:0;
+    color:black;
+    justify-content:center;
+}
+.item-input {
+    margin:0;
+    width:80%;
+    padding-left:5px;
+    border-radius:5px;
+}
+.form-div {
+    padding:45px;
+    background-color:white;
+    width:50%;
+    border-radius:40px;
+}

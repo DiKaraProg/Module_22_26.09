@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "jtAjK4MklsfCCfcQA8edKUAeKUHErnu6RYLGYICeHcM=",
+  "Source": "Module_21_MVC",
+  "BasePath": "_content/Module_21_MVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Module_21_MVC\\wwwroot",
+      "Source": "Module_21_MVC",
+      "ContentRoot": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\wwwroot\\",
+      "BasePath": "_content/Module_21_MVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Module_21_MVC.styles.css",
+      "SourceId": "Module_21_MVC",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Module_21_MVC",
+      "RelativePath": "Module_21_MVC.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Module_21_MVC.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Module_21_MVC.bundle.scp.css",
+      "SourceId": "Module_21_MVC",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Module_21_MVC",
+      "RelativePath": "Module_21_MVC.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Module_21_MVC.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\wwwroot\\css\\Add-Edit.css",
+      "SourceId": "Module_21_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\wwwroot\\",
+      "BasePath": "_content/Module_21_MVC",
+      "RelativePath": "css/Add-Edit.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Add-Edit.css"
+    },
+    {
+      "Identity": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\wwwroot\\css\\MainStyleSheet.css",
+      "SourceId": "Module_21_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Димас\\Downloads\\Обучение програмированию\\module22\\Module_21_MVC_06.09-main\\Module_21_MVC\\Module_21_MVC\\wwwroot\\",
+      "BasePath": "_content/Module_21_MVC",
+      "RelativePath": "css/MainStyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MainStyleSheet.css"
+    }
+  ]
+}

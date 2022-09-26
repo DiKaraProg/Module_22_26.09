@@ -1,0 +1,38 @@
+﻿@model Module_21_MVC_Domain.ViewModels.Worker.WorkerViewModel
+
+@{
+    Layout = "_Layout";
+}
+
+    <div class="container">
+        <div class="div-table">
+
+        <table class="mainTable" border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Фамилия</th>
+                    <th>Имя</th>
+                    <th>Отчество</th>
+                    <th>Номер телефона</th>
+                    <th>Адрес</th>
+                    <th>Заметка</th>
+                </tr>
+            </thead>
+
+                 <tr>
+                        <td>@Model.Id</td>
+                        <td>@Model.Name</td>
+                        <td>@Model.LastName</td>
+                        <td>@Model.FatherName</td>
+                        <td>@Model.PhoneNumber</td>
+                        <td>@Model.Address</td>
+                        <td>@Model.Note</td>
+                </tr>
+                
+            
+            
+
+        </table>
+        </div>
+    </div>

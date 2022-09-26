@@ -1,0 +1,56 @@
+﻿@model List<Module_21_MVC_Domain.Entity.Worker>
+
+@{
+    Layout = "_Layout";
+}
+
+
+
+    <div class="container">
+        <div class="div-table">
+            <table class="mainTable" border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Фамилия</th>
+                        <th>Имя</th>
+                        <th>Отчество</th>
+                        <th>Удалить</th>
+                        <th>Изменить</th>
+                    </tr>
+                </thead>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td><a asp-action="GetWorker" asp-route-id="@item.Id">@item.Id</a></td>
+                        <td>@item.LastName</td>
+                        <td>@item.Name</td>
+                        <td>@item.FatherName</td>
+                    @if (User.IsInRole("admin"))
+                    {
+                         <td>
+                            <form asp-action="Delete" asp-controller="Worker" asp-route-id="@item.Id">
+                                <button type="submit">
+                                    Удалить
+                                </button>
+                            </form>
+                        </td>
+                        <td>
+                            <form asp-action="ChangeWorker" asp-controller="Worker" asp-route-id="@item.Id">
+                                <button type="submit">
+                                    Изменить
+                                </button>
+                            </form>
+                        </td>
+                    }
+                    </tr>
+
+                }
+
+        </table>
+       
+        </div>
+    </div>
+    
+       

@@ -1,0 +1,39 @@
+﻿@model Module_21_MVC_Domain.Entity.Worker
+
+@{
+    Layout = "_Layout";
+}
+        <div class="container">
+       <form asp-action="Save" enctype="multipart/form-data">
+           <div class="form-div">
+
+           <div class="form-div-item">
+            <p class="form-disc" >LastName</p>
+            <input class="item-input" type="text" name="LastName">
+           </div>
+            <div class="form-div-item">
+                <p class="form-disc">Name</p>
+            <input class="item-input" type="text" name="Name">
+           </div>
+            <div class="form-div-item">
+                <p class="form-disc">FatherName</p>
+             <input class="item-input" type="text" name="FatherName">
+           </div>
+            <div class="form-div-item">
+                <p class="form-disc">PhoneNumber</p>
+            <input class="item-input" type="text" name="PhoneNumber">
+           </div>
+            <div class="form-div-item">
+                 <p class="form-disc">Address</p>
+            <input class="item-input" type="text" name="Address">
+           </div>
+            <div class="form-div-item">
+                <p class="form-disc">Note</p>
+            <textarea class="item-input" name="Note"  cols="30" rows="10"></textarea>
+           </div>
+            <div class="form-div-item">
+                <button class="btn" type="submit">Отправить</button>
+           </div>
+            </div>
+    </form>
+    </div>
